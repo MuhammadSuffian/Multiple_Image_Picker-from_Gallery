@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("Tag", "Adapter and RecyclerView set up")
         recyclerAdapter = RecyclerItemViewModel(this, dataobject)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = GridLayoutManager(this,4)
         recyclerView.adapter = recyclerAdapter
 
         btn.setOnClickListener {

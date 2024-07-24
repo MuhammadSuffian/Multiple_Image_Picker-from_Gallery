@@ -34,6 +34,6 @@ class RecyclerItemViewModel(val context: Context, val arrContact: ArrayList<item
             .load(arrContact[position].uri)
             //.override(300, 200)
             .error(R.drawable.ic_launcher_background)
-            .into(holder.imageView);
+            .into(holder.imageView)
     }
 }
